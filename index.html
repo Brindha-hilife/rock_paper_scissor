@@ -14,33 +14,38 @@
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <!-- <img src="/assets/css/image/img2.webp" alt="" width="" height=""> -->
-    <div class="container">
-        
+   <div class="container">
+    <div class="container-player">  
         <div class="item">
             <h1>Rock Paper Scissor</h1>
         </div>
         <div class="container-one">
             <div class="item-left">
                 <h2 class="heading-left">Player</h2>
-
+                <img src="/assets/css/image/rock.png" id="image1" class="image" alt="" >
+                <!-- <img src="/assets/css/image/paper.png" id="image2"  class="image" alt="" >
+                <img src="/assets/css/image/scissor.png" id="image3"  class="image" alt="" > -->
             </div>
             <div class="item-right">
                 <h2 class="heading-right">Computer</h2>
-
+                <!-- <img src="/assets/css/image/rock.png" id="image4" alt="" >
+                <img src="/assets/css/image/paper.png" id="image5" alt="" >
+                <img src="/assets/css/image/scissor.png" id="image6" alt="" > -->
             </div>
         </div>
         <div class="container-two">
             <div class="one">
-                <button class="btn-sm">Rock</button>
+                <button type="button" onclick="myRock()" id="btnIDone">Rock</button>
             </div>
             <div class="two">
-                <button class="btn-sm">Paper</button>
+                <button type="button"  onclick="myPaper()" id="btnIDtwo">Paper</button>
             </div>
             <div class="three">
-                <button class="btn-sm">Scissor</button>
+                <button type="button" onclick="myScissor()" id="btnIDthree">Scissor</button>
             </div>
         </div>
-    </div>
+    </div></div>
+    
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

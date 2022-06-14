@@ -1,8 +1,11 @@
 *{
     box-sizing: border-box;
     margin: 0;  
+    
 }
 body{
+    width: 100%;
+    height: 100vh;
     /* background: #27282c !important; */
     background-image: url('./image/img1.jpg') ;
     background-repeat: no-repeat;
@@ -31,9 +34,7 @@ h1{
     row-gap: 10px;
     column-gap: 20px;
 } 
-.item-left .item-right{ 
-    
-}
+
 .heading-left{
     background: -webkit-linear-gradient(#fff, red);
   -webkit-background-clip: text;
@@ -45,6 +46,7 @@ h1{
     -webkit-text-fill-color: transparent;
 }
 .container-two{
+    position: relative;
     align-content: center;
     justify-content: space-around;
     display: flex;
@@ -57,12 +59,30 @@ h1{
 button{
     width:100px;
     height: 45px;
-    background: -webkit-linear-gradient(#fff, blue);
+    /* background: -webkit-linear-gradient(#fff, blue); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color:white;
+    border-color: #fff;
+    font-size: 35px;
 }
-button:hover{
+#btnIDone:hover{
     width:120px;
     height: 55px;
+    box-shadow: 0 0 55px red;
+}
+#btnIDtwo:hover{
+    width:120px;
+    height: 55px;
+    box-shadow: 0 0 55px #fff; 
+}
+#btnIDthree:hover{
+    width:120px;
+    height: 55px;
+    box-shadow: 0 0 55px blue;
+}
+.image{
+   visibility: hidden;
+    padding-top: 40%;
+    width: 150px;
 }
