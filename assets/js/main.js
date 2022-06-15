@@ -144,17 +144,17 @@ function game(){
 		chooseMove.innerText = 'Game Over!!' 
 		movesLeft.style.display = 'none';
 
-		switch(playerScore,computerScore){
-      case(playerScore > computerScore):
-      result.textContent = 'You Won The Game';
-      break;
-      case(playerScore < computerScore):
-      result.textContent = 'You Lost The Game';
-      break;
-      case(playerScore == computerScore):
-      result.textContent = 'Tie';
-      break;
-    }
+// 		switch(playerScore,computerScore){
+//       case(playerScore > computerScore):
+//       result.textContent = 'You Won The Game';
+//       break;
+//       case(playerScore < computerScore):
+//       result.textContent = 'You Lost The Game';
+//       break;
+//       case(playerScore == computerScore):
+//       result.textContent = 'Tie';
+//       break;
+//     }
 	}
 	myGame();
 }
