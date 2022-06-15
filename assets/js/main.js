@@ -1,13 +1,13 @@
 // To get the image
 function playerSelection(param) {
     if (param.value === 'Rock') {
-      document.getElementById("png").src = "./assets/css/image/rock.png";
+      document.getElementById("png").src = "assets/css/image/rock.png";
       
     } else if (param.value === 'Paper') {
-      document.getElementById("png").src = "./assets/css/image/paper.png";
+      document.getElementById("png").src = "assets/css/image/paper.png";
       
     } else if (param.value === 'Scissor')  {
-      document.getElementById("png").src = "./assets/css/image/scissor.png";
+      document.getElementById("png").src = "assets/css/image/scissor.png";
     }
     // console.log(param.value)
     var myPix = new Array("./assets/css/image/rock.png", "./assets/css/image/paper.png", "./assets/css/image/scissor.png");
