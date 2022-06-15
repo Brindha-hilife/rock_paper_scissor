@@ -49,6 +49,7 @@ h1{
     background: -webkit-linear-gradient(#fff, red) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
   
 }
 .heading-center{
@@ -58,6 +59,13 @@ h1{
     background: -webkit-linear-gradient(#fff, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+p{
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
 }
 .container-two{
     position: relative;

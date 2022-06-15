@@ -1,5 +1,5 @@
-var player = document.getElementById('player');
-var computer = document.getElementById('computer');
+// var player = document.getElementById('player');
+// var computer = document.getElementById('computer');
 
 // var player = document.getElementById("myBtn");
 // var player = document.getElementById("myBtn1");
@@ -40,11 +40,25 @@ function playerSelection(param) {
 
   }
 
-  var myPix = new Array("/assets/css/image/rock.png", "/assets/css/image/paper.png", "/assets/css/image/scissor.png");
-// let x = Math.floor((Math.random() * 3) + 1);
-// document.getElementById("firstone").innerHTML = x;
-  function computerSelection(){
-  var randomNum = Math.floor(Math.random() * myPix.length);
-  document.getElementById("myPicture").src = myPix[randomNum];
+//   var myPix = new Array("/assets/css/image/rock.png", "/assets/css/image/paper.png", "/assets/css/image/scissor.png");
+function computerSelection(){
+let x = Math.floor((Math.random() * 3) + 1);
 
-  }
+document.getElementById("computer").innerHTML = x;
+}
+
+//   function computerSelection(){
+//   var randomNum = Math.floor(Math.random() * myPix.length);
+//   document.getElementById("myPicture").src = myPix[randomNum];
+
+//   }
+var text;
+
+for (let i=0; i<5; i++){
+    switch(playerSelection,computerSelection){
+        case(playerSelection === computerSelection):
+        text = "The Match is Tie"
+
+    }
+
+}
