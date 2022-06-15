@@ -22,7 +22,7 @@
         <div class="container-one">
             <div class="item-left">
                 <h2 class="heading-left" >Player</h2>
-                <p id="demo">0</p>
+                <p class="demo">0</p>
                 <div id="Player ">
                     <img src=""  class="image" alt=""  id="png">
                 </div>
@@ -37,34 +37,38 @@
 
             </div>
             <div class="item-center">
-                <h2 class="heading-center" id="result">Result</h2>
-                <div>
+                
+                <h2 class="heading-center" >Result</h2>
+                <div class="move">
+                    <div class="movesleft">Moves Left: 5 </div>
+                </div>
+                <div class="result" id="result">
 
                 </div>
             </div>
             <div class="item-right">
                 <h2 class="heading-right" >Computer</h2>
-                <p id="demo1">0</p>
-                <div  id="computer">
-                    <section onload="computerSelection();"></section>
-                </div>
-                <!-- <div id="secondone">
+                <p class="demo1">0</p>
+               
+                 <!-- <div id="secondone">
                     <img src=""   class="image" alt="" id="myPicture">
-                </div>
-                <div id="thirdone">
-                    <img src=""  class="image" alt="" id="myPicture" >
                 </div> -->
+                <div id="thirdone">
+                    <img src=""  class="image" alt="" id="myPicture" onchange="">
+                </div> 
             </div>
         </div>
+        
         <div class="container-two">
+            
             <div class="one">
-                <button type="button" id="myBtn"  class="btnIDone" onclick="playerSelection(this)" value="Rock">Rock</button>
+                <button type="button" id="myBtn"  class="rock" onclick="playerSelection(this)" value="Rock">Rock</button>
             </div>
             <div class="two">
-                <button type="button" id="myBtn"  class="btnIDtwo" onclick="playerSelection(this)"  value="Paper">Paper</button>
+                <button type="button" id="myBtn"  class="paper" onclick="playerSelection(this)"  value="Paper">Paper</button>
             </div>
             <div class="three">
-                <button type="button" id="myBtn" class="btnIDthree" onclick="playerSelection(this)" value="Scissor">Scissor</button>
+                <button type="button" id="myBtn" class="scissor" onclick="playerSelection(this)" value="Scissor">Scissor</button>
             </div>
         </div>
     </div></div>

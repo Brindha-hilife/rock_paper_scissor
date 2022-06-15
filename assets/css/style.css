@@ -54,6 +54,19 @@ h1{
 }
 .heading-center{
     color:#fff;
+    text-align: center;
+}
+.result{
+    color:#fff;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.movesleft{
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
 }
 .heading-right{
     background: -webkit-linear-gradient(#fff, blue);
@@ -111,4 +124,8 @@ button{
 }
 #first, #second, #third{
     display: none;
+}
+.move{
+    color: #fff;
+    font-size: 30px;
 }
