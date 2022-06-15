@@ -10,7 +10,7 @@ function playerSelection(param) {
       document.getElementById("png").src = "assets/css/image/scissor.png";
     }
     // console.log(param.value)
-    var myPix = new Array("./assets/css/image/rock.png", "./assets/css/image/paper.png", "./assets/css/image/scissor.png");
+    var myPix = new Array("assets/css/image/rock.png", "assets/css/image/paper.png", "assets/css/image/scissor.png");
     var randomNum = Math.floor(Math.random() * myPix.length);
     document.getElementById("myPicture").src = myPix[randomNum];
   }
@@ -93,7 +93,7 @@ function game(){
 		}
 		else if(player == 'rock')
       {
-        document.getElementById("png").src = "./assets/css/image/rock.png";
+        document.getElementById("png").src = "assets/css/image/rock.png";
 			if(computer == 'paper'){
 				result.textContent = 'Computer Won';
 				computerScore++;
@@ -106,7 +106,7 @@ function game(){
 			}
 		}
 		else if(player == 'scissors'){
-      document.getElementById("png").src = "./assets/css/image/scissor.png";
+      document.getElementById("png").src = "assets/css/image/scissor.png";
 			if(computer == 'rock'){
 				result.textContent = 'Computer Won';
 				computerScore++;
@@ -118,7 +118,7 @@ function game(){
 			}
 		}
 		else if(player == 'paper'){
-      document.getElementById("png").src = "./assets/css/image/paper.png";
+      document.getElementById("png").src = "assets/css/image/paper.png";
 			if(computer == 'scissors'){
 				result.textContent = 'Computer Won';
 				computerScore++;
