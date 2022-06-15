@@ -1,32 +1,50 @@
-function myRock(){
-    document.getElementById('image1')
-        .style.display = "block";
+var player = document.getElementById('player');
+var computer = document.getElementById('computer');
 
-    // document.getElementById('image2')
-    //     .style.display = "none";
+// var player = document.getElementById("myBtn");
+// var player = document.getElementById("myBtn1");
+// var player = document.getElementById("myBtn2");
 
-    // document.getElementById('image3')
-    //     .style.display = "none";
-}
- 
-// function myPaper(){
-//     document.getElementById('image2')
-//         .style.display = "block";
+// player.addEventListener("click", myFunction);
+// player.addEventListener("click", myFunction2);
+// player.addEventListener("click", myFunction3);
 
-//     document.getElementById('image3')
-//         .style.display = "none";
-
-//     document.getElementById('image1')
-//         .style.display = "none";
+// function myFunction() {
+//     document.getElementById("first").style.display ='block';
+//     document.getElementById("second").style.display ='none'
+//     document.getElementById("third").style.display ='none'
 // }
-
-// function myScissor(){
-//     document.getElementById('image3')
-//         .style.display = "block";
-
-//     document.getElementById('image1')
-//         .style.display = "none";
-
-//     document.getElementById('image2')
-//         .style.display = "none";
+  
+// function myFunction2() {
+//     document.getElementById("second").style.display ='block'
+//     document.getElementById("first").style.display ='none'
+//     document.getElementById("third").style.display ='none'
 // }
+  
+// function myFunction3() {
+//     document.getElementById("third").style.display ='block'
+//     document.getElementById("first").style.display ='none'
+//     document.getElementById("second").style.display ='none'
+// }
+function playerSelection(param) {
+    if (param.value === 'Rock') {
+      document.getElementById("png").src = "/assets/css/image/rock.png";
+      
+    } else if (param.value === 'Paper') {
+      document.getElementById("png").src = "/assets/css/image/paper.png";
+      
+    } else if (param.value === 'Scissor')  {
+      document.getElementById("png").src = "/assets/css/image/scissor.png";
+    }
+    // console.log(param.value)
+
+  }
+
+  var myPix = new Array("/assets/css/image/rock.png", "/assets/css/image/paper.png", "/assets/css/image/scissor.png");
+// let x = Math.floor((Math.random() * 3) + 1);
+// document.getElementById("firstone").innerHTML = x;
+  function computerSelection(){
+  var randomNum = Math.floor(Math.random() * myPix.length);
+  document.getElementById("myPicture").src = myPix[randomNum];
+
+  }

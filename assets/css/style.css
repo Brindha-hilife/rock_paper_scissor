@@ -1,20 +1,21 @@
 *{
     box-sizing: border-box;
     margin: 0;  
-    
+   
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     /* background: #27282c !important; */
     background-image: url('./image/img1.jpg') ;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
-   background-size:cover;
+    background-size:cover;
 }
 .container {
+    width: 100%;
     align-content: center;
-    margin-top:50px;
+    margin-top:30px;
 } 
 .item{
     align-self:auto;
@@ -34,11 +35,24 @@ h1{
     row-gap: 10px;
     column-gap: 20px;
 } 
-
+.item-left{
+    /* display: flex; */
+    max-height: 50px;
+    padding-top: 100px;
+}
+.item-right{
+    /* display: flex; */
+    max-height: 50px;
+    padding-top: 100px;
+}
 .heading-left{
-    background: -webkit-linear-gradient(#fff, red);
+    background: -webkit-linear-gradient(#fff, red) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
+}
+.heading-center{
+    color:#fff;
 }
 .heading-right{
     background: -webkit-linear-gradient(#fff, blue);
@@ -64,25 +78,29 @@ button{
     -webkit-text-fill-color: transparent;
     color:white;
     border-color: #fff;
-    font-size: 35px;
+    font-size: 25px;
 }
-#btnIDone:hover{
+.btnIDone:hover{
     width:120px;
     height: 55px;
     box-shadow: 0 0 55px red;
 }
-#btnIDtwo:hover{
+.btnIDtwo:hover{
     width:120px;
     height: 55px;
     box-shadow: 0 0 55px #fff; 
 }
-#btnIDthree:hover{
+.btnIDthree:hover{
     width:120px;
     height: 55px;
     box-shadow: 0 0 55px blue;
 }
 .image{
-   visibility: hidden;
-    padding-top: 40%;
+   /* visibility: hidden; */
+    padding-top: 40px;
     width: 150px;
+   
+}
+#first, #second, #third{
+    display: none;
 }
