@@ -57,10 +57,10 @@ function game(){
 				var choiceNumber = Math.floor(Math.random()*3);
 				var computerChoice = computerOptions[choiceNumber];
 
-				// Function to check who wins
+			
 				winner(this.innerText,computerChoice)
 				
-				// Calling gameOver function after 10 moves
+				
 				if(moves == 5){
 					endgame(playerOptions,movesLeft);
 				}
